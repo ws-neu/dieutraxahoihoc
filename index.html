@@ -101,7 +101,7 @@
                 </div>
                 
                 <div class="text-box" id="Q3-box">
-                    <div class="question">Câu 3: <span class="userPP" style="text-transform: capitalize;">Bạn</span> thường mua sắm mỹ phẩm trên các sàn TMĐT nào nhất?</div>
+                    <div class="question">Câu 3: <span class="userPP" style="text-transform: capitalize;">Bạn</span> thường mua sắm mỹ phẩm trên các sàn TMĐT nào?</div>
                     <div class="options">
                         <label><input type="radio" name="Q3" value="1" onclick="removeError('Q3-box')"> Chưa sử dụng</label>
                         <label><input type="radio" name="Q3" value="2" onclick="removeError('Q3-box')"> Shopee</label>
@@ -169,7 +169,7 @@
                                 <td><input type="radio" name="TC1" value="5" onclick="removeError('TC1-row')"></td>
                             </tr>
                             <tr id="TC2-row">
-                                <th>Tôi tin rằng giá trị mà các sản phẩm mỹ phẩm đem lại không bị KOCs phóng đại quá mức.</th>
+                                <th>Tôi tin những lời phê bình của KOCs về một sản phẩm mỹ phẩm.</th>
                                 <td><input type="radio" name="TC2" value="1" onclick="removeError('TC2-row')"></td>
                                 <td><input type="radio" name="TC2" value="2" onclick="removeError('TC2-row')"></td>
                                 <td><input type="radio" name="TC2" value="3" onclick="removeError('TC2-row')"></td>
@@ -235,13 +235,13 @@
                                 <td><input type="radio" name="ND3" value="5" onclick="removeError('ND3-row')"></td>
                             </tr>
                             <tr id="ND4-row">
-                                <th>KOCs cung cấp thông tin hữu ích hơn các nguồn đánh giá khác trên mạng xã hội.</th>
+                                <th>Các nhận định về sản phẩm mỹ phẩm của KOCs đưa ra giúp tôi trong việc đưa ra quyết định mua hàng.</th>
                                 <td><input type="radio" name="ND4" value="1" onclick="removeError('ND4-row')"></td>
                                 <td><input type="radio" name="ND4" value="2" onclick="removeError('ND4-row')"></td>
                                 <td><input type="radio" name="ND4" value="3" onclick="removeError('ND4-row')"></td>
                                 <td><input type="radio" name="ND4" value="4" onclick="removeError('ND4-row')"></td>
                                 <td><input type="radio" name="ND4" value="5" onclick="removeError('ND4-row')"></td>
-                            </tr>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
@@ -284,6 +284,22 @@
                                 <td><input type="radio" name="FL3" value="4" onclick="removeError('FL3-row')"></td>
                                 <td><input type="radio" name="FL3" value="5" onclick="removeError('FL3-row')"></td>
                             </tr>
+                            <tr id="FL4-row">
+                                <th>Tôi cảm thấy KOCs có lượt tương tác tích cực sẽ ảnh hưởng nhiều hơn đến hành vi mua sắm mỹ phẩm của tôi.</th>
+                                <td><input type="radio" name="FL4" value="1" onclick="removeError('FL4-row')"></td>
+                                <td><input type="radio" name="FL4" value="2" onclick="removeError('FL4-row')"></td>
+                                <td><input type="radio" name="FL4" value="3" onclick="removeError('FL4-row')"></td>
+                                <td><input type="radio" name="FL4" value="4" onclick="removeError('FL4-row')"></td>
+                                <td><input type="radio" name="FL4" value="5" onclick="removeError('FL4-row')"></td>
+                            </tr>
+                            <tr id="FL5-row">
+                                <th>Tôi cảm thấy KOCs có tương tác thường xuyên với người theo dõi sẽ đáng tin cậy hơn.</th>
+                                <td><input type="radio" name="FL5" value="1" onclick="removeError('FL5-row')"></td>
+                                <td><input type="radio" name="FL5" value="2" onclick="removeError('FL5-row')"></td>
+                                <td><input type="radio" name="FL5" value="3" onclick="removeError('FL5-row')"></td>
+                                <td><input type="radio" name="FL5" value="4" onclick="removeError('FL5-row')"></td>
+                                <td><input type="radio" name="FL5" value="5" onclick="removeError('FL5-row')"></td>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
@@ -334,6 +350,14 @@
                                 <td><input type="radio" name="RR4" value="4" onclick="removeError('RR4-row')"></td>
                                 <td><input type="radio" name="RR4" value="5" onclick="removeError('RR4-row')"></td>
                             </tr>
+                            <tr id="RR5-row">
+                                <th>Thật khó để đánh giá sự chân thật của KOCs.</th>
+                                <td><input type="radio" name="RR5" value="1" onclick="removeError('RR5-row')"></td>
+                                <td><input type="radio" name="RR5" value="2" onclick="removeError('RR5-row')"></td>
+                                <td><input type="radio" name="RR5" value="3" onclick="removeError('RR5-row')"></td>
+                                <td><input type="radio" name="RR5" value="4" onclick="removeError('RR5-row')"></td>
+                                <td><input type="radio" name="RR5" value="5" onclick="removeError('RR5-row')"></td>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
@@ -376,6 +400,22 @@
                                 <td><input type="radio" name="TD3" value="4" onclick="removeError('TD3-row')"></td>
                                 <td><input type="radio" name="TD3" value="5" onclick="removeError('TD3-row')"></td>
                             </tr>
+                            <tr id="TD4-row">
+                                <th>Tôi thích xem nội dung từ KOCs hơn so với các kênh truyền thông chính thống.</th>
+                                <td><input type="radio" name="TD4" value="1" onclick="removeError('TD4-row')"></td>
+                                <td><input type="radio" name="TD4" value="2" onclick="removeError('TD4-row')"></td>
+                                <td><input type="radio" name="TD4" value="3" onclick="removeError('TD4-row')"></td>
+                                <td><input type="radio" name="TD4" value="4" onclick="removeError('TD4-row')"></td>
+                                <td><input type="radio" name="TD4" value="5" onclick="removeError('TD4-row')"></td>
+                            </tr>
+                            <tr id="TD5-row">
+                                <th>Tôi tin vào kinh nghiệm của những KOCs mà mình theo dõi và nghe theo lời khuyên của họ.</th>
+                                <td><input type="radio" name="TD5" value="1" onclick="removeError('TD5-row')"></td>
+                                <td><input type="radio" name="TD5" value="2" onclick="removeError('TD5-row')"></td>
+                                <td><input type="radio" name="TD5" value="3" onclick="removeError('TD5-row')"></td>
+                                <td><input type="radio" name="TD5" value="4" onclick="removeError('TD5-row')"></td>
+                                <td><input type="radio" name="TD5" value="5" onclick="removeError('TD5-row')"></td>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
@@ -403,7 +443,7 @@
                                 <td><input type="radio" name="HV1" value="5" onclick="removeError('HV1-row')"></td>
                             </tr>
                             <tr id="HV2-row">
-                                <th>Khi mua mỹ phẩm tôi sẽ chọn mua loại mỹ phẩm đã được KOCs đánh giá tích cực.</th>
+                                <th>Trước khi quyết định mua hàng, tôi thường đọc và căn cứ vào những phản hồi của người mua hàng trước đó.</th>
                                 <td><input type="radio" name="HV2" value="1" onclick="removeError('HV2-row')"></td>
                                 <td><input type="radio" name="HV2" value="2" onclick="removeError('HV2-row')"></td>
                                 <td><input type="radio" name="HV2" value="3" onclick="removeError('HV2-row')"></td>
@@ -411,7 +451,7 @@
                                 <td><input type="radio" name="HV2" value="5" onclick="removeError('HV2-row')"></td>
                             </tr>
                             <tr id="HV3-row">
-                                <th>Tôi sẽ xuất cho bạn bè, người thân mua sản phẩm mỹ phẩm được KOCs mà tôi yêu thích giới thiệu.</th>
+                                <th>Tôi sẽ đề xuất cho bạn bè, người thân mua sản phẩm mỹ phẩm được KOCs mà tôi yêu thích giới thiệu.</th>
                                 <td><input type="radio" name="HV3" value="1" onclick="removeError('HV3-row')"></td>
                                 <td><input type="radio" name="HV3" value="2" onclick="removeError('HV3-row')"></td>
                                 <td><input type="radio" name="HV3" value="3" onclick="removeError('HV3-row')"></td>
@@ -419,13 +459,21 @@
                                 <td><input type="radio" name="HV3" value="5" onclick="removeError('HV3-row')"></td>
                             </tr>
                             <tr id="HV4-row">
-                                <th>Tôi sẽ tiếp tục mua mỹ phẩm được KOCs mà tôi yêu thích giới thiệu.</th>
+                                <th>Khi mua mỹ phẩm tôi sẽ chọn mua loại mỹ phẩm đã được KOCs đánh giá tích cực.</th>
                                 <td><input type="radio" name="HV4" value="1" onclick="removeError('HV4-row')"></td>
                                 <td><input type="radio" name="HV4" value="2" onclick="removeError('HV4-row')"></td>
                                 <td><input type="radio" name="HV4" value="3" onclick="removeError('HV4-row')"></td>
                                 <td><input type="radio" name="HV4" value="4" onclick="removeError('HV4-row')"></td>
                                 <td><input type="radio" name="HV4" value="5" onclick="removeError('HV4-row')"></td>
                             </tr>
+                            <tr id="HV5-row">
+                                <th>Tôi sẽ tiếp tục mua mỹ phẩm được KOCs mà tôi yêu thích giới thiệu.</th>
+                                <td><input type="radio" name="HV5" value="1" onclick="removeError('HV5-row')"></td>
+                                <td><input type="radio" name="HV5" value="2" onclick="removeError('HV5-row')"></td>
+                                <td><input type="radio" name="HV5" value="3" onclick="removeError('HV5-row')"></td>
+                                <td><input type="radio" name="HV5" value="4" onclick="removeError('HV5-row')"></td>
+                                <td><input type="radio" name="HV5" value="5" onclick="removeError('HV5-row')"></td>
+                            </tr>                            
                         </tbody>
                     </table>
                 </div>
