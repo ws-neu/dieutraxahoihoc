@@ -1,7 +1,7 @@
-dfunction checkName() {
+function checkName() {
     let nameInput = document.getElementById('I1-row').value;
-    
-    nameInput = nameInput.trim().split(/\s+/).map(word => 
+
+    nameInput = nameInput.trim().split(/\s+/).map(word =>
         word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
     ).join(' ');
     const nameParts = nameInput.split(/\s+/);
@@ -24,20 +24,20 @@ dfunction checkName() {
     }
 
 }
+
 function checkYear() {
     let genderInput = document.querySelector('input[name="I2"]:checked');
     let yearInput = document.querySelector('input[name="I3"]:checked');
     let personalPronoun = "";
     let usPronoun = "chúng tớ ";
-    if (yearInput.value ==="1" || yearInput.value ==="2") {
+    if (yearInput.value === "1" || yearInput.value === "2") {
         let usPElements = document.getElementsByClassName('us');
         for (let element of usPElements) {
             element.textContent = usPronoun;
         }
         return;
-    }
-    else if (yearInput.value === "3" || yearInput.value === "4") {
-        if (genderInput.value === "1"){
+    } else if (yearInput.value === "3" || yearInput.value === "4") {
+        if (genderInput.value === "1") {
             personalPronoun = "anh ";
         } else personalPronoun = "chị ";
         usPronoun = "chúng em ";
@@ -51,6 +51,7 @@ function checkYear() {
         element.textContent = usPronoun;
     }
 }
+
 function nextPage(i) {
     document.getElementById(`page${i}`).classList.add("hidden");
     document.getElementById(`page${i + 1}`).classList.remove("hidden");
@@ -86,15 +87,18 @@ function checkAllQuestions(start, end, prefix, messagePrefix, partPrefix = "", c
         let isAnswered = document.querySelector(`input[name="${prefix}${i}"]:checked`);
         let elementId = `${prefix}${i}${prefix.startsWith("Q") ? "-box" : "-row"}`;
         let element = document.getElementById(elementId);
-        
+
         if (!isAnswered) {
             element.classList.add("error");
             if (customMessage === "") {
-            showPopup(`Vui lòng trả lời ${messagePrefix} ${i}${prefix !== "Q" ? ` của phần ${partPrefix}` : ""} trước khi tiếp tục 😊!`);
+                showPopup(`Vui lòng trả lời ${messagePrefix} ${i}${prefix !== "Q" ? ` của phần ${partPrefix}` : ""} trước khi tiếp tục 😊!`);
             } else {
                 showPopup(customMessage);
             }
-            element.scrollIntoView({ behavior: "smooth", block: "center" });
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
             return false;
         }
         element.classList.remove("error");
@@ -106,17 +110,18 @@ function handleNextPage(currentPage) {
     if (currentPage === 0) {
         let nameInput = document.querySelector('input[name="I1"]');
         let nameValue = nameInput.value.trim();
-        
+
         if (nameValue === "") {
             nameInput.classList.add("error");
             showPopup("Cho chúng tớ được biết tên bạn nhé 😉!");
             return;
         } else {
             nameInput.classList.remove("error");
-            if (!checkAllQuestions(2, 2, "I", "câu", "", "Chúng tớ xin phép được biết giới tính của bạn với 😉!")
-                || !checkAllQuestions(3, 3, "I", "câu", "", "Bạn có thể nói cho chúng tớ biết bạn là sinh viên năm mấy không 😉!")) {
+            if (!checkAllQuestions(2, 2, "I", "câu", "", "Chúng tớ xin phép được biết giới tính của bạn với 😉!") ||
+                !checkAllQuestions(3, 3, "I", "câu", "", "Bạn có thể nói cho chúng tớ biết bạn là sinh viên năm mấy không 😉!")) {
                 return;
-            } nextPage(0);
+            }
+            nextPage(0);
         }
     }
     if (currentPage === 2) {
