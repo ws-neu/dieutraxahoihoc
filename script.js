@@ -1,4 +1,4 @@
-function checkName() {
+dfunction checkName() {
     let nameInput = document.getElementById('I1-row').value;
     
     nameInput = nameInput.trim().split(/\s+/).map(word => 
